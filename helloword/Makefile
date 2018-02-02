@@ -15,7 +15,7 @@ EXTRA_CFLAGS += -I$(LDDINC)
 ifneq ($(KERNELRELEASE),)
 # call from kernel build system
 
-hello-objs :=  
+hello-objs := hello_main.o 
 
 obj-m	:= hello.o
 
